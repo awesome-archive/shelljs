@@ -6,7 +6,7 @@
 [![npm version](https://img.shields.io/npm/v/shelljs.svg?style=flat-square)](https://www.npmjs.com/package/shelljs)
 [![npm downloads](https://img.shields.io/npm/dm/shelljs.svg?style=flat-square)](https://www.npmjs.com/package/shelljs)
 
-ShellJS is a portable **(Windows/Linux/OS X)** implementation of Unix shell
+ShellJS is a portable **(Windows/Linux/macOS)** implementation of Unix shell
 commands on top of the Node.js API. You can use it to eliminate your shell
 script's dependency on Unix while still keeping its familiar and powerful
 commands. You can also install it globally so you can run it from outside Node
@@ -308,6 +308,7 @@ Available options:
 
 + `async`: Asynchronous execution. If a callback is provided, it will be set to
   `true`, regardless of the passed value (default: `false`).
++ `fatal`: Exit upon error (default: `false`).
 + `silent`: Do not echo program output to console (default: `false`).
 + `encoding`: Character encoding to use. Affects the values returned to stdout and stderr, and
   what is written to stdout and stderr when not in silent mode (default: `'utf8'`).
